@@ -1,0 +1,29 @@
+.item {
+	background-color: #f1e;
+	margin:1px;
+}
+.dot{
+	width: 15px;
+	height: 15px;
+	display: block;
+	float: right;
+	margin: 10%;
+	border-radius: 15px;
+}
+.red{
+	background-color: red;
+}
+.green {
+	background-color: green;
+}
+.item{
+	padding-top: 7px;
+}
+.list-footer{
+	background-color: #fee;
+	margin:1px;
+}
+.list-scroll{
+	height: 600px;
+	overflow-x: scroll;
+}

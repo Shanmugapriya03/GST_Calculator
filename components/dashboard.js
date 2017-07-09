@@ -103,7 +103,7 @@ export default class Dashboard extends React.Component{
 			}else{
 				return(
 					<div className="col-lg-7 list-scroll">
-						<button className="btn btn-info" onClick={this.toggleGST}>See how GST your budget</button>
+						<button className="btn btn-info" onClick={this.toggleGST}>See how GST affects your budget</button>
 						{this.displaySelected()}
 					</div>
 				);

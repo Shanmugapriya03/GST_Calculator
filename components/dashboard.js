@@ -25,10 +25,10 @@ export default class Dashboard extends React.Component{
         for (let i in this.state.data){
             //console.log(i);
             	//items.push(<Display d={this.state.data[i]} key={i} keyProp={i} onselect={this.select}/>);
-				if ( allItems[ this.state.data[i]["category-code"] ] == undefined){
-					allItems[ this.state.data[i]["category-code"] ] = [];
+				if ( allItems[ this.state.data[i]["category-label"] ] == undefined){
+					allItems[ this.state.data[i]["category-label"] ] = [];
 				}
-				allItems[ this.state.data[i]["category-code"] ].push(<Display d={this.state.data[i]} key={i} keyProp={i} onselect={this.select}/>)
+				allItems[ this.state.data[i]["category-label"] ].push(<Display d={this.state.data[i]} key={i} keyProp={i} onselect={this.select}/>)
         }
 		for (let category in allItems ){
 			items.push(<h1>{category}</h1>);
@@ -103,7 +103,7 @@ export default class Dashboard extends React.Component{
 			}else{
 				return(
 					<div className="col-lg-7 list-scroll">
-						<button className="btn btn-info" onClick={this.toggleGST}>Show GST</button>
+						<button className="btn btn-info" onClick={this.toggleGST}>See how GST your budget</button>
 						{this.displaySelected()}
 					</div>
 				);
